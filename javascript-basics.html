@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<ul id="site-nav">
+  <li><a href="index.html" target="_self">Начальная страница сайта</a></li>
+  <li><a href="html-basics.html#section1" target="_self">HTML и закладки</a></li>
+  <li><a href="css-basics.html" target="_self">CSS</a></li>
+  <li><a href="javascript-basics.html" target="_self"><b>JavaScript (текущая страница)</b></a></li>
+  <li><a href="gallery.html" target="_self">Изображения и таблица</a></li>
+  <li><a href="forms.html" target="_self">Формы</a></li>
+  <li><a href="passport-dom.html" target="_self">DOM_JS. Считываем информацию из DOM</a></li>
+  <li><a href="passport-change.html" target="_self">Изменяем кириллицу на латиницу по клику</a></li>
+  <li><a href="task-1006.html" target="_self">Решение алгоритмической задачи</a></li>
+  <li><a href="https://www.hse.ru" target="_blank">Ссылка на внешний сайт</a></li>
+  <li><a href="https://evshadrina.github.io/evshadrina/sem2_pasport/" target="_blank"><img src="assets/images/passport-template.png" height="30" alt="Графическая ссылка на пример паспорта"></a></li>
+</ul>
+
+<a id="top"><h4>Закладки (внутренняя навигация по странице)</h4></a>
+<ul>
+  <li><a href="#section1" target="_self">Раздел 1. DOM</a></li>
+  <li><a href="#section2" target="_self">Раздел 2. События</a></li>
+  <li><a href="#section3" target="_self">Раздел 3. Алгоритм</a></li>
+</ul>
+
+<h3><a id="section1">Раздел 1. DOM</a></h3>
+<p>DOM представляет HTML-документ как дерево объектов. Элемент можно найти по идентификатору:</p>
+<pre>document.getElementById('name').innerText</pre>
+<p class="to-top"><a href="#top" target="_self">К началу страницы</a></p>
+
+<h3><a id="section2">Раздел 2. События</a></h3>
+<p>JavaScript может выполнять функцию после нажатия на кнопку.</p>
+<p><img class="simple-image" src="assets/images/js-events.svg" width="400" alt="Схема обработки события click"></p>
+<ol>
+  <li>Найти кнопку.</li>
+  <li>Добавить обработчик события <code>click</code>.</li>
+  <li>Изменить нужный текст в DOM.</li>
+</ol>
+<p class="to-top"><a href="#top" target="_self">К началу страницы</a></p>
+
+<h3><a id="section3">Раздел 3. Алгоритм</a></h3>
+<p>Алгоритм должен проверить исходные данные, выполнить вычисления и вывести результат.</p>
+<ul>
+  <li>проверить пустое значение;</li>
+  <li>проверить тип числа;</li>
+  <li>вывести понятное сообщение.</li>
+</ul>
+<p class="to-top"><a href="#top" target="_self">К началу страницы</a></p>
+
+</body>
+</html>

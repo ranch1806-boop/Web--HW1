@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Структура HTML-документа</title>
+  <desc id="desc">Схема дерева HTML с элементами head и body</desc>
+  <rect width="600" height="400" rx="28" fill="#f6efe7"/>
+  <g fill="none" stroke="#9aa8b5" stroke-width="4">
+    <path d="M300 90v45M170 135h260M170 135v55M430 135v55M170 245v35M90 280h160M90 280v38M250 280v38"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="24" text-anchor="middle">
+    <g><rect x="230" y="38" width="140" height="54" rx="12" fill="#17324d"/><text x="300" y="73" fill="white">&lt;html&gt;</text></g>
+    <g><rect x="105" y="187" width="130" height="54" rx="12" fill="#55c2bd"/><text x="170" y="222" fill="#102a43">&lt;head&gt;</text></g>
+    <g><rect x="365" y="187" width="130" height="54" rx="12" fill="#e06c55"/><text x="430" y="222" fill="white">&lt;body&gt;</text></g>
+    <g><rect x="30" y="316" width="120" height="48" rx="12" fill="#fff" stroke="#55c2bd" stroke-width="3"/><text x="90" y="347" fill="#17324d">title</text></g>
+    <g><rect x="190" y="316" width="120" height="48" rx="12" fill="#fff" stroke="#55c2bd" stroke-width="3"/><text x="250" y="347" fill="#17324d">meta</text></g>
+    <g><rect x="365" y="316" width="130" height="48" rx="12" fill="#fff" stroke="#e06c55" stroke-width="3"/><text x="430" y="347" fill="#17324d">content</text></g>
+  </g>
+</svg>

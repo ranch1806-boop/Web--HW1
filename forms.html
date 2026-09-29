@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Формы. Отправляем данные на сервер</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<ul id="site-nav">
+  <li><a href="index.html" target="_self">Начальная страница сайта</a></li>
+  <li><a href="html-basics.html#section1" target="_self">HTML и закладки</a></li>
+  <li><a href="css-basics.html" target="_self">CSS</a></li>
+  <li><a href="javascript-basics.html" target="_self">JavaScript</a></li>
+  <li><a href="gallery.html" target="_self">Изображения и таблица</a></li>
+  <li><a href="forms.html" target="_self"><b>Формы (текущая страница)</b></a></li>
+  <li><a href="passport-dom.html" target="_self">DOM_JS. Считываем информацию из DOM</a></li>
+  <li><a href="passport-change.html" target="_self">Изменяем кириллицу на латиницу по клику</a></li>
+  <li><a href="task-1006.html" target="_self">Решение алгоритмической задачи</a></li>
+  <li><a href="https://www.hse.ru" target="_blank">Ссылка на внешний сайт</a></li>
+  <li><a href="https://evshadrina.github.io/evshadrina/sem2_pasport/" target="_blank"><img src="assets/images/passport-template.png" height="30" alt="Графическая ссылка на пример паспорта"></a></li>
+</ul>
+
+<a id="top"><h4>Закладки (внутренняя навигация по странице)</h4></a>
+<ul>
+  <li><a href="#contacts" target="_self">Раздел 1. Личные контактные данные</a></li>
+  <li><a href="#order" target="_self">Раздел 2. Заказ учебного сайта</a></li>
+</ul>
+
+<h3 align="center"><a id="contacts">Раздел 1. Личные контактные данные</a></h3>
+
+<form action="https://www.bing.com/search" method="get" target="_blank">
+  <input type="hidden" name="q" value="Контактная форма КР1 Сидоренко Михаил">
+  <p>Фамилия: <input type="text" name="last_name" value="Сидоренко"></p>
+  <p>Имя: <input type="text" name="first_name" value="Михаил"></p>
+  <p>Группа: <input type="text" name="group" value="УКАЖИТЕ ГРУППУ"></p>
+  <p>Мобильный телефон: <input type="tel" name="mobile_phone" value="+7 900 000-00-00"></p>
+  <p>Электронная почта: <input type="email" name="email" value="student@example.com"></p>
+  <p>Дата отправки сообщения: <input type="date" name="message_date" value="2026-09-29"></p>
+  <p>
+    <input type="reset" value="Обновить">
+    <input type="submit" value="Отправить">
+  </p>
+</form>
+
+<p class="to-top"><a href="#top" target="_self">К началу страницы</a></p>
+
+<h3 align="center"><a id="order">Раздел 2. Заказ учебного сайта</a></h3>
+
+<form action="https://www.bing.com/search" method="get" target="_blank">
+  <input type="hidden" name="q" value="Заказ учебного сайта">
+  <input type="hidden" name="form_kind" value="web_site_order">
+
+  <p>Название проекта: <input type="text" name="project_name" value="Учебный сайт"></p>
+  <p>Количество страниц: <input type="number" name="page_count" value="5" min="1"></p>
+
+  <p>Оформление:
+    <input type="radio" name="design" value="light" checked> Светлое
+    <input type="radio" name="design" value="dark"> Тёмное
+  </p>
+
+  <p>Разделы сайта:
+    <input type="checkbox" name="sections" value="gallery" checked> Галерея
+    <input type="checkbox" name="sections" value="contacts" checked> Контакты
+    <input type="checkbox" name="sections" value="calculator"> Калькулятор
+  </p>
+
+  <p>Дата готовности: <input type="date" name="deadline" value="2026-10-15"></p>
+  <p>Демонстрационный пароль: <input type="password" name="demo_password" value="demo123"></p>
+  <p>Комментарий:<br><textarea name="comment" cols="60" rows="4">Нужна адаптивная версия сайта.</textarea></p>
+
+  <p>
+    <input type="reset" value="Обновить">
+    <input type="submit" value="Отправить">
+  </p>
+</form>
+
+<p class="to-top"><a href="#top" target="_self">К началу страницы</a></p>
+
+</body>
+</html>

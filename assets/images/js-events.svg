@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title">
+  <title id="title">События JavaScript</title>
+  <rect width="600" height="400" rx="28" fill="#fff7df"/>
+  <rect x="72" y="84" width="456" height="235" rx="18" fill="#fff" stroke="#17324d" stroke-width="6"/>
+  <rect x="72" y="84" width="456" height="42" rx="14" fill="#17324d"/>
+  <circle cx="98" cy="105" r="6" fill="#e06c55"/><circle cx="118" cy="105" r="6" fill="#f0c75e"/><circle cx="138" cy="105" r="6" fill="#55c2bd"/>
+  <rect x="178" y="172" width="244" height="74" rx="16" fill="#55c2bd"/>
+  <text x="300" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#17324d">Нажми меня</text>
+  <path d="m405 246 36 64 12-25 28 20 12-17-29-20 22-16z" fill="#e06c55" stroke="#17324d" stroke-width="4" stroke-linejoin="round"/>
+  <text x="300" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#17324d">click → обработчик → изменение DOM</text>
+</svg>

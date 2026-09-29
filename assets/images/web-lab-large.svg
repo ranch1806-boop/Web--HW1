@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Учебная веб-лаборатория</title>
+  <desc id="desc">Большая иллюстрация 600 на 400 пикселей с редактором кода и браузером</desc>
+  <rect width="600" height="400" rx="26" fill="#142f49"/>
+  <circle cx="520" cy="70" r="115" fill="#55c2bd" opacity=".16"/>
+  <circle cx="75" cy="330" r="130" fill="#e06c55" opacity=".14"/>
+  <rect x="48" y="62" width="248" height="276" rx="16" fill="#0d2133" stroke="#6c8296" stroke-width="3"/>
+  <rect x="48" y="62" width="248" height="38" rx="14" fill="#253f57"/>
+  <circle cx="70" cy="81" r="5" fill="#e06c55"/><circle cx="87" cy="81" r="5" fill="#f0c75e"/><circle cx="104" cy="81" r="5" fill="#55c2bd"/>
+  <g stroke-linecap="round" stroke-width="8">
+    <path d="M78 130h54M151 130h91M78 160h34M132 160h92M78 190h72M169 190h55M78 220h112M78 250h46M143 250h99M78 280h91" stroke="#55c2bd"/>
+    <path d="M78 145h98M195 145h47M78 175h78M175 175h67M78 205h34M131 205h111M78 235h81M178 235h64M78 265h101M198 265h44" stroke="#d7e4ed" opacity=".7"/>
+  </g>
+  <rect x="324" y="88" width="228" height="224" rx="18" fill="#f8fbfd"/>
+  <rect x="324" y="88" width="228" height="38" rx="16" fill="#dbe7ee"/>
+  <circle cx="345" cy="107" r="5" fill="#e06c55"/><circle cx="362" cy="107" r="5" fill="#f0c75e"/><circle cx="379" cy="107" r="5" fill="#55c2bd"/>
+  <rect x="352" y="156" width="172" height="24" rx="8" fill="#17324d"/>
+  <rect x="352" y="197" width="126" height="12" rx="6" fill="#9cafbd"/>
+  <rect x="352" y="220" width="172" height="12" rx="6" fill="#c1cdd7"/>
+  <rect x="352" y="258" width="86" height="28" rx="8" fill="#55c2bd"/>
+  <path d="M275 350h82" stroke="#e06c55" stroke-width="6" stroke-linecap="round"/>
+  <text x="316" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#d7e4ed">HTML + CSS + JavaScript</text>
+</svg>

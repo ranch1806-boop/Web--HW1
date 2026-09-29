@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 190" role="img" aria-labelledby="title">
+  <title id="title">Нейтральный силуэт вместо фотографии</title>
+  <rect width="150" height="190" fill="#ece8e4"/>
+  <circle cx="75" cy="67" r="35" fill="#8799a8"/>
+  <path d="M20 177c5-51 29-76 55-76s50 25 55 76" fill="#8799a8"/>
+  <path d="M14 14h122v162H14z" fill="none" stroke="#b94b5b" stroke-width="4" stroke-dasharray="5 5"/>
+</svg>
