@@ -49,51 +49,33 @@ function calculateChange(rawAmount) {
   };
 }
 
-function showTaskResult(result) {
-  const resultBox = document.getElementById("result-box");
-  const resultField = document.getElementById("result");
-  const sendButton = document.getElementById("send-task");
-  const queryField = document.getElementById("task-query");
-  const formulation = document.getElementById("formulation").value;
-  const amount = document.getElementById("amount").value;
+let checked = false;
 
-  resultBox.textContent = result.message;
-  resultField.value = result.message;
+function verify() {
+  const result = calculateChange(document.getElementById("amount").value);
+  document.getElementById("result").value = result.message;
+  checked = result.valid;
+}
 
-  if (result.valid) {
-    resultBox.dataset.state = "success";
-    sendButton.disabled = false;
-    queryField.value = formulation + " Исходная сумма: " + amount + ". Результат: " + result.message;
+function send() {
+  if (checked) {
+    document.getElementById("UserEnter").submit();
   } else {
-    resultBox.dataset.state = "error";
-    sendButton.disabled = true;
-    queryField.value = "";
+    alert("Сначала выполните расчет.");
   }
 }
 
 if (typeof document !== "undefined") {
   document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("task-form");
     const amountField = document.getElementById("amount");
     const calculateButton = document.getElementById("calculate");
+    const sendButton = document.getElementById("send-task");
 
-    calculateButton.addEventListener("click", function () {
-      showTaskResult(calculateChange(amountField.value));
-    });
+    calculateButton.addEventListener("click", verify);
+    sendButton.addEventListener("click", send);
 
     amountField.addEventListener("input", function () {
-      document.getElementById("send-task").disabled = true;
-      document.getElementById("result-box").textContent = "Нажмите «Рассчитать».";
-      document.getElementById("result-box").dataset.state = "";
-    });
-
-    form.addEventListener("submit", function (event) {
-      const result = calculateChange(amountField.value);
-      showTaskResult(result);
-
-      if (!result.valid) {
-        event.preventDefault();
-      }
+      checked = false;
     });
   });
 }

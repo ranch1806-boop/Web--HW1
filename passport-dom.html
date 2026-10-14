@@ -19,38 +19,30 @@
   <li><a href="passport-change.html" target="_self">Изменяем кириллицу на латиницу по клику</a></li>
   <li><a href="task-1006.html" target="_self">Решение алгоритмической задачи</a></li>
   <li><a href="https://www.hse.ru" target="_blank">Ссылка на внешний сайт</a></li>
-  <li><a href="https://evshadrina.github.io/evshadrina/sem2_pasport/" target="_blank"><img src="assets/images/passport-template.png" height="30" alt="Графическая ссылка на пример паспорта"></a></li>
 </ul>
 
 <h3>DOM_JS. Считываем информацию из DOM</h3>
-<p>Замените значение <b>ГГГГ</b> на настоящий год рождения. Остальные сведения вымышлены.</p>
 
 <div class="passport-layout">
-  <p class="passport-issuer">ОТДЕЛОМ УЧЕБНЫХ МАКЕТОВ ГОРОДА Н.</p>
+  <p class="passport-issuer">ГУ МВД ПО МОСКОВСКОЙ ОБЛАСТИ</p>
   <p class="passport-date">29.09.2026</p>
-  <p class="passport-code">000-000</p>
-  <p class="passport-surname"><span id="surname">Сидоренко</span></p>
-  <p class="passport-name"><span id="name">Михаил</span></p>
-  <p class="passport-patronymic">Андреевич</p>
+  <span class="passport-code">000-000</span>
+  <p class="passport-surname">
+    <span id="surname">Сидоренко</span>
+  </p>
+  <p class="passport-name">
+    <span id="name">Михаил</span>
+  </p>
+  <p class="passport-patronymic">Евгеньевич</p>
   <p class="passport-sex">МУЖ.</p>
-  <p class="passport-birth"><span id="birth-year">ГГГГ</span> г.</p>
-  <p class="passport-place">ГОР. НИЖНИЙ НОВГОРОД</p>
-  <img class="passport-photo" src="assets/images/avatar-placeholder.svg" alt="Нейтральный силуэт вместо фотографии">
-  <button class="passport-button" id="read-dom" type="button">Получить данные</button>
+  <p class="passport-birth">
+    <span id="birth-year">2007</span> г.
+  </p>
+  <p class="passport-place">ГОР. ОДИНЦОВО</p>
+  <img class="passport-photo" src="assets/images/passport-photo.jpg" alt="Учебное фото из примера преподавателя">
 </div>
 
-<h4>Команды для консоли браузера</h4>
-<pre>const surname = document.getElementById('surname').textContent.trim();
-const name = document.getElementById('name').textContent.trim();
-const birthYear = document.getElementById('birth-year').textContent.trim();
-console.log({ surname, name, birthYear });</pre>
-
-<pre id="dom-output">Результат появится здесь и в консоли.</pre>
-
 <h4>Скриншот браузера</h4>
-<p>После указания года рождения сделайте скриншот страницы с открытой консолью и вставьте его вместо блока ниже.</p>
-<div class="screenshot-placeholder">Место для настоящего скриншота браузера</div>
-
-<script src="js/passport-dom.js"></script>
+<p><a href="assets/images/passport-dom-screenshot.png" target="_blank"><img src="assets/images/passport-dom-screenshot.png" width="960" style="max-width: 100%; height: auto;" alt="Скриншот паспорта и консоли браузера с полученными из DOM фамилией, именем и годом рождения"></a></p>
 </body>
 </html>

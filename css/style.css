@@ -1,21 +1,3 @@
-/* Минимальные стили. Основное оформление оставлено стандартным, как в учебных примерах. */
-
-body {
-  margin: 8px;
-}
-
-#site-nav {
-  margin-top: 0;
-}
-
-.to-top {
-  text-align: right;
-}
-
-.simple-image {
-  max-width: 100%;
-}
-
 .passport-layout {
   position: relative;
   width: 445px;
@@ -57,49 +39,34 @@ body {
 }
 
 .passport-code {
+  position: absolute;
   left: 65%;
   top: 23%;
   font-size: 12px !important;
+  line-height: 1;
+  white-space: nowrap;
 }
 
-.passport-surname { left: 34%; top: 55%; }
-.passport-name { left: 34%; top: 62%; }
-.passport-patronymic { left: 34%; top: 67%; }
-.passport-sex { left: 34%; top: 71%; }
-.passport-birth { left: 55%; top: 71%; }
-.passport-place { left: 34%; top: 78%; }
+.passport-surname { left: 34%; top: 59%; width: 55%; text-align: center; }
+.passport-name { left: 34%; top: 63.5%; width: 55%; text-align: center; }
+.passport-patronymic { left: 34%; top: 67.2%; width: 55%; text-align: center; }
+.passport-sex { left: 36%; top: 71.4%; }
+.passport-birth { left: 55%; top: 71.4%; }
+.passport-place { left: 34%; top: 76%; width: 55%; text-align: center; }
 
 .passport-photo {
   position: absolute;
-  left: 7%;
-  top: 60%;
-  width: 25%;
-  height: 23%;
+  left: 7.4%;
+  top: 60.8%;
+  width: 24.7%;
+  height: 21.5%;
+  object-fit: cover;
 }
 
 .passport-button {
   position: absolute;
   left: 30px;
   bottom: 25px;
-}
-
-.screenshot-placeholder {
-  width: 600px;
-  max-width: 100%;
-  min-height: 180px;
-  border: 1px solid black;
-  text-align: center;
-  padding-top: 80px;
-  box-sizing: border-box;
-}
-
-#dom-output,
-#result-box {
-  min-height: 24px;
-}
-
-.large-image-page {
-  text-align: center;
 }
 
 @media (max-width: 470px) {

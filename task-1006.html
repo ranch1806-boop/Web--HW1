@@ -2,9 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Решение алгоритмической задачи</title>
-  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -19,38 +17,25 @@
   <li><a href="passport-change.html" target="_self">Изменяем кириллицу на латиницу по клику</a></li>
   <li><a href="task-1006.html" target="_self"><b>Решение алгоритмической задачи (текущая страница)</b></a></li>
   <li><a href="https://www.hse.ru" target="_blank">Ссылка на внешний сайт</a></li>
-  <li><a href="https://evshadrina.github.io/evshadrina/sem2_pasport/" target="_blank"><img src="assets/images/passport-template.png" height="30" alt="Графическая ссылка на пример паспорта"></a></li>
 </ul>
 
 <h3>Решение алгоритмической задачи</h3>
 
 <p name="formulation">Известна денежная сумма. Разменять её купюрами 500, 100, 10 и монетой 2 руб., если это возможно.</p>
 
-<form action="https://www.bing.com/search" id="task-form" name="task-form" method="get" target="_blank">
-  <input id="task-query" type="hidden" name="q" value="">
+<form action="https://www.bing.com/search" id="UserEnter" name="UserEnter" method="get" target="_blank">
+  <input type="hidden" name="q" value="Задача 1006">
   <input type="hidden" name="task_number" value="1006">
   <ul>
     <li>Формулировка задачи:<br>
-      <textarea cols="70" rows="3" id="formulation" name="formulation" readonly>Известна денежная сумма. Разменять её купюрами 500, 100, 10 и монетой 2 руб., если это возможно.</textarea>
+      <textarea cols="70" rows="3" id="formulation" name="formulation">Известна денежная сумма. Разменять её купюрами 500, 100, 10 и монетой 2 руб., если это возможно.</textarea>
     </li>
     <li>Сумма: <input id="amount" name="amount" type="number" value="1234" step="any"></li>
-    <li>Результат: <input id="result" name="result" type="text" value="не рассчитано" size="75" readonly></li>
-    <li><input id="calculate" type="button" value="Рассчитать"></li>
-    <li><input id="send-task" type="submit" value="Отправить" disabled></li>
+    <li>Результат: <input id="result" name="result" type="text" value="не определен" size="75"></li>
+    <li>действие 1: <input id="calculate" type="button" value="Рассчитать"></li>
+    <li>действие 2: <input id="send-task" type="button" value="Отправить"></li>
   </ul>
 </form>
-
-<p id="result-box">Нажмите «Рассчитать».</p>
-
-<h4>Проверяемые значения</h4>
-<ul>
-  <li>0 — возможен размен нулевым количеством номиналов;</li>
-  <li>-2 — ошибка;</li>
-  <li>10,5 — ошибка;</li>
-  <li>9 — размен невозможен;</li>
-  <li>1234 — 2 купюры по 500, 2 по 100, 3 по 10 и 2 монеты по 2;</li>
-  <li>1012 — 2 купюры по 500, 1 по 10 и 1 монета по 2.</li>
-</ul>
 
 <script src="js/task-1006.js"></script>
 </body>

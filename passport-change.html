@@ -19,27 +19,23 @@
   <li><a href="passport-change.html" target="_self"><b>Изменяем кириллицу на латиницу по клику (текущая страница)</b></a></li>
   <li><a href="task-1006.html" target="_self">Решение алгоритмической задачи</a></li>
   <li><a href="https://www.hse.ru" target="_blank">Ссылка на внешний сайт</a></li>
-  <li><a href="https://evshadrina.github.io/evshadrina/sem2_pasport/" target="_blank"><img src="assets/images/passport-template.png" height="30" alt="Графическая ссылка на пример паспорта"></a></li>
 </ul>
 
 <h3>Изменяем кириллицу на латиницу по клику</h3>
-<p>Замените значение <b>ГГГГ</b> на настоящий год рождения. После нажатия цифры года сохраняются, а подпись «г.» изменяется на «year».</p>
 
 <div class="passport-layout">
-  <p class="passport-issuer">ОТДЕЛОМ УЧЕБНЫХ МАКЕТОВ ГОРОДА Н.</p>
+  <p class="passport-issuer" data-en="MAIN DIRECTORATE OF THE MIA FOR MOSCOW REGION">ГУ МВД ПО МОСКОВСКОЙ ОБЛАСТИ</p>
   <p class="passport-date">29.09.2026</p>
-  <p class="passport-code">000-000</p>
-  <p class="passport-surname"><span id="surname">Сидоренко</span></p>
-  <p class="passport-name"><span id="name">Михаил</span></p>
-  <p class="passport-patronymic">Андреевич</p>
-  <p class="passport-sex">МУЖ.</p>
-  <p class="passport-birth"><span id="birth-year">ГГГГ г.</span></p>
-  <p class="passport-place">ГОР. НИЖНИЙ НОВГОРОД</p>
-  <img class="passport-photo" src="assets/images/avatar-placeholder.svg" alt="Нейтральный силуэт вместо фотографии">
+  <span class="passport-code">000-000</span>
+  <p class="passport-surname"><span id="surname" data-en="Sidorenko">Сидоренко</span></p>
+  <p class="passport-name"><span id="name" data-en="Mikhail">Михаил</span></p>
+  <p class="passport-patronymic" data-en="Evgenyevich">Евгеньевич</p>
+  <p class="passport-sex" data-en="MALE">МУЖ.</p>
+  <p class="passport-birth"><span id="birth-year" data-en="2007 year">2007 г.</span></p>
+  <p class="passport-place" data-en="ODINTSOVO">ГОР. ОДИНЦОВО</p>
+  <img class="passport-photo" src="assets/images/passport-photo.jpg" alt="Учебное фото из примера преподавателя">
   <button class="passport-button" id="change-language" type="button">Заменить</button>
 </div>
-
-<p>Результат: Сидоренко → Sidorenko, Михаил → Mikhail, ГГГГ г. → YYYY year.</p>
 
 <script src="js/passport-change.js"></script>
 </body>

@@ -2,9 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Изображения и таблица</title>
-  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -19,59 +17,55 @@
   <li><a href="passport-change.html" target="_self">Изменяем кириллицу на латиницу по клику</a></li>
   <li><a href="task-1006.html" target="_self">Решение алгоритмической задачи</a></li>
   <li><a href="https://www.hse.ru" target="_blank">Ссылка на внешний сайт</a></li>
-  <li><a href="https://evshadrina.github.io/evshadrina/sem2_pasport/" target="_blank"><img src="assets/images/passport-template.png" height="30" alt="Графическая ссылка на пример паспорта"></a></li>
 </ul>
 
 <a id="top"><h4>Закладки (внутренняя навигация по странице)</h4></a>
 <ul>
   <li><a href="#section1" target="_self">Раздел 1. Графическая ссылка</a></li>
   <li><a href="#section2" target="_self">Раздел 2. Таблица</a></li>
-  <li><a href="#section3" target="_self">Раздел 3. Пояснение</a></li>
 </ul>
 
 <h3><a id="section1">Раздел 1. Графическая ссылка</a></h3>
-<p>Миниатюра шириной не более 100 пикселей открывает изображение 600 × 400 пикселей в новой вкладке:</p>
-<p><a href="image-view.html" target="_blank"><img src="assets/images/web-lab-large.svg" width="90" alt="Миниатюра большого изображения"></a></p>
-<p class="to-top"><a href="#top" target="_self">К началу страницы</a></p>
+<p>Миниатюра шириной 90 пикселей открывает изображение 600 × 400 пикселей в новой вкладке.</p>
+<p><a href="assets/images/web-lab-large.svg" target="_blank"><img src="assets/images/web-lab-large.svg" width="90" alt="Миниатюра большого изображения"></a></p>
+<p>На изображении показаны редактор HTML-кода и окно браузера.</p>
+<p align="right"><a href="#top" target="_self">К началу страницы</a></p>
 
 <h3><a id="section2">Раздел 2. Таблица</a></h3>
 
 <table align="center" cellspacing="5" cellpadding="10" border="1" width="700" background="assets/images/table-pattern.svg">
   <tr>
     <td colspan="3" bgcolor="Aqua" background="assets/images/table-pattern.svg" height="50">
-      HTML, CSS и JavaScript
+      Основы веб-технологий
     </td>
-    <td rowspan="3"><a href="task-1006.html">Задача № 1006</a></td>
-  </tr>
-  <tr>
-    <td height="200">
-      <a href="html-basics.html">HTML</a><br>
-      <a href="css-basics.html">CSS</a><br>
-      <a href="javascript-basics.html">JavaScript</a>
-    </td>
-    <td bgcolor="Fuchsia" width="300" background="assets/images/table-pattern.svg">
-            <img src="assets/images/perl.gif" width="250" alt="Изображение из учебного примера">
-    </td>
-    <td>
-      <a href="https://github.com/vmarshirov/g06u28/tree/main/010_html/040_tables" target="_blank">Пример таблицы</a>
+    <td rowspan="5" align="center">
+      <a href="index.html" target="_self"><img src="assets/images/web-lab-large.svg" width="200" alt="Редактор кода и браузер — перейти на главную страницу"></a>
+      <p>Редактор кода и браузер</p>
     </td>
   </tr>
   <tr>
-    <td align="right" valign="top" colspan="3" height="100">
-      Таблица содержит фоновое изображение, изображение в ячейке и гиперссылки.
-    </td>
+    <th>Технология</th>
+    <th background="assets/images/table-pattern.svg">Назначение</th>
+    <th>Раздел сайта</th>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>Структура страницы: заголовки, ссылки, списки, таблицы и формы.</td>
+    <td><a href="html-basics.html">HTML и закладки</a></td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td background="assets/images/table-pattern.svg">Оформление и расположение элементов, в том числе текста поверх шаблона паспорта.</td>
+    <td><a href="css-basics.html">CSS</a></td>
+  </tr>
+  <tr>
+    <td>JavaScript</td>
+    <td>Обработка нажатий, изменение текста в DOM и решение алгоритмических задач.</td>
+    <td><a href="javascript-basics.html">JavaScript</a><br><a href="task-1006.html">Задача № 1006</a></td>
   </tr>
 </table>
 
-<p class="to-top"><a href="#top" target="_self">К началу страницы</a></p>
-
-<h3><a id="section3">Раздел 3. Пояснение</a></h3>
-<ul>
-  <li>Фоновое изображение задано атрибутом <code>background</code> у таблицы.</li>
-  <li>Отдельная картинка размещена во второй строке.</li>
-  <li>В ячейках находятся внутренние и внешние ссылки.</li>
-</ul>
-<p class="to-top"><a href="#top" target="_self">К началу страницы</a></p>
+<p align="right"><a href="#top" target="_self">К началу страницы</a></p>
 
 </body>
 </html>
