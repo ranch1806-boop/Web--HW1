@@ -1,3 +1,65 @@
+body {
+  margin: 0;
+  color: #15153b;
+  background: #f0f0ff;
+}
+
+#site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0 12px;
+  list-style: none;
+  background: #22223d;
+  font: 17px Arial, sans-serif;
+}
+
+#site-nav a {
+  display: block;
+  padding: 19px 16px;
+  color: #8cc4ff;
+  text-decoration: none;
+}
+
+#site-nav a:hover,
+#site-nav a:focus-visible {
+  color: white;
+  background: #50507e;
+}
+
+#site-nav a[aria-current="page"] {
+  color: #174573;
+  background: #c3cfe8;
+}
+
+main {
+  max-width: 1050px;
+  margin: 26px auto;
+  padding: 0 20px 24px;
+}
+
+main > p {
+  line-height: 1.6;
+}
+
+a { color: #175b9b; }
+
+[id] { scroll-margin-top: 16px; }
+
+.table-scroll { overflow-x: auto; }
+
+table { max-width: 100%; }
+
+table img { max-width: 100%; height: auto; }
+
+@media (max-width: 600px) {
+  #site-nav { justify-content: flex-start; font-size: 15px; }
+  #site-nav a { padding: 14px 12px; }
+  main { padding: 0 12px 20px; }
+  textarea { max-width: 100%; box-sizing: border-box; }
+}
+
 .passport-layout {
   position: relative;
   width: 445px;

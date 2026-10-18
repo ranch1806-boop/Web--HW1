@@ -2,27 +2,30 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Формы. Отправляем данные на сервер</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <ul id="site-nav">
-  <li><a href="index.html" target="_self">Начальная страница сайта</a></li>
-  <li><a href="html-basics.html#section1" target="_self">HTML и закладки</a></li>
-  <li><a href="css-basics.html" target="_self">CSS</a></li>
-  <li><a href="javascript-basics.html" target="_self">JavaScript</a></li>
-  <li><a href="gallery.html" target="_self">Изображения и таблица</a></li>
-  <li><a href="forms.html" target="_self"><b>Формы (текущая страница)</b></a></li>
-  <li><a href="passport-dom.html" target="_self">DOM_JS. Считываем информацию из DOM</a></li>
-  <li><a href="passport-change.html" target="_self">Изменяем кириллицу на латиницу по клику</a></li>
-  <li><a href="task-1006.html" target="_self">Решение алгоритмической задачи</a></li>
-  <li><a href="https://www.hse.ru" target="_blank">Ссылка на внешний сайт</a></li>
+  <li><a href="index.html" target="_self">Главная</a></li>
+  <li><a href="html-basics.html#section1" target="_self">О хоккее</a></li>
+  <li><a href="css-basics.html" target="_self">Правила</a></li>
+  <li><a href="javascript-basics.html" target="_self">Команда</a></li>
+  <li><a href="gallery.html" target="_self">Матчи и таблица</a></li>
+  <li><a href="forms.html" target="_self" aria-current="page" title="Текущая страница">Формы</a></li>
+  <li><a href="passport-dom.html" target="_self">DOM_JS</a></li>
+  <li><a href="passport-change.html" target="_self">Паспорт</a></li>
+  <li><a href="task-1006.html" target="_self">Алг. задача</a></li>
+  <li><a href="https://www.hse.ru" target="_blank">Университет</a></li>
 </ul>
+<main>
 
 <a id="top"><h4>Закладки (внутренняя навигация по странице)</h4></a>
 <ul>
   <li><a href="#contacts" target="_self">Раздел 1. Личные контактные данные</a></li>
-  <li><a href="#order" target="_self">Раздел 2. Заказ учебного сайта</a></li>
+  <li><a href="#order" target="_self">Раздел 2. Заказ билетов на хоккей</a></li>
 </ul>
 
 <h3 align="center"><a id="contacts">Раздел 1. Личные контактные данные</a></h3>
@@ -43,28 +46,28 @@
 
 <p align="right"><a href="#top" target="_self">К началу страницы</a></p>
 
-<h3 align="center"><a id="order">Раздел 2. Заказ учебного сайта</a></h3>
+<h3 align="center"><a id="order">Раздел 2. Заказ билетов на хоккей</a></h3>
 
 <form action="https://www.bing.com/search" method="get" target="_blank">
-  <input type="hidden" name="q" value="Заказ учебного сайта">
-  <input type="hidden" name="form_kind" value="web_site_order">
+  <input type="hidden" name="q" value="Заказ билетов на хоккей">
+  <input type="hidden" name="form_kind" value="hockey_ticket_order">
 
-  <p>Название проекта: <input type="text" name="project_name" value="Учебный сайт"></p>
-  <p>Количество страниц: <input type="number" name="page_count" value="5" min="1"></p>
+  <p>Матч: <input type="text" name="match_name" value="Товарищеский хоккейный матч"></p>
+  <p>Количество билетов: <input type="number" name="ticket_count" value="2" min="1"></p>
 
-  <p>Оформление:
-    <input type="radio" name="design" value="light" checked> Светлое
-    <input type="radio" name="design" value="dark"> Тёмное
+  <p>Категория билета:
+    <input type="radio" name="ticket_type" value="standard" checked> Стандартный
+    <input type="radio" name="ticket_type" value="student"> Студенческий
   </p>
 
-  <p>Разделы сайта:
-    <input type="checkbox" name="sections" value="gallery" checked> Галерея
-    <input type="checkbox" name="sections" value="contacts" checked> Контакты
-    <input type="checkbox" name="sections" value="calculator"> Калькулятор
+  <p>Дополнительно:
+    <input type="checkbox" name="extras" value="programme" checked> Программа матча
+    <input type="checkbox" name="extras" value="scarf" checked> Шарф
+    <input type="checkbox" name="extras" value="puck"> Сувенирная шайба
   </p>
 
-  <p>Дата готовности: <input type="date" name="deadline" value="2026-10-15"></p>
-  <p>Демонстрационный пароль: <input type="password" name="demo_password" value="demo123"></p>
+  <p>Дата матча: <input type="date" name="match_date" value="2026-11-01"></p>
+  <p>Учебный код заказа: <input type="password" name="order_code" value="demo123"></p>
   <p>
     <input type="reset" value="Обновить">
     <input type="submit" value="Отправить">
@@ -73,5 +76,6 @@
 
 <p align="right"><a href="#top" target="_self">К началу страницы</a></p>
 
+</main>
 </body>
 </html>

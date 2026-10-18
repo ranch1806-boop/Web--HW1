@@ -2,70 +2,56 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Изображения и таблица</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Хоккей: матчи и таблица</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <ul id="site-nav">
-  <li><a href="index.html" target="_self">Начальная страница сайта</a></li>
-  <li><a href="html-basics.html#section1" target="_self">HTML и закладки</a></li>
-  <li><a href="css-basics.html" target="_self">CSS</a></li>
-  <li><a href="javascript-basics.html" target="_self">JavaScript</a></li>
-  <li><a href="gallery.html" target="_self"><b>Изображения и таблица (текущая страница)</b></a></li>
+  <li><a href="index.html" target="_self">Главная</a></li>
+  <li><a href="html-basics.html#section1" target="_self">О хоккее</a></li>
+  <li><a href="css-basics.html" target="_self">Правила</a></li>
+  <li><a href="javascript-basics.html" target="_self">Команда</a></li>
+  <li><a href="gallery.html" target="_self" aria-current="page" title="Текущая страница">Матчи и таблица</a></li>
   <li><a href="forms.html" target="_self">Формы</a></li>
-  <li><a href="passport-dom.html" target="_self">DOM_JS. Считываем информацию из DOM</a></li>
-  <li><a href="passport-change.html" target="_self">Изменяем кириллицу на латиницу по клику</a></li>
-  <li><a href="task-1006.html" target="_self">Решение алгоритмической задачи</a></li>
-  <li><a href="https://www.hse.ru" target="_blank">Ссылка на внешний сайт</a></li>
+  <li><a href="passport-dom.html" target="_self">DOM_JS</a></li>
+  <li><a href="passport-change.html" target="_self">Паспорт</a></li>
+  <li><a href="task-1006.html" target="_self">Алг. задача</a></li>
+  <li><a href="https://www.hse.ru" target="_blank">Университет</a></li>
 </ul>
-
-<a id="top"><h4>Закладки (внутренняя навигация по странице)</h4></a>
+<main>
+<a id="top"><h2>Матчи и таблица</h2></a>
 <ul>
-  <li><a href="#section1" target="_self">Раздел 1. Графическая ссылка</a></li>
-  <li><a href="#section2" target="_self">Раздел 2. Таблица</a></li>
+<li><a href="#section1">Раздел 1. Фотография матча</a></li>
+<li><a href="#section2">Раздел 2. Памятка болельщика</a></li>
 </ul>
-
-<h3><a id="section1">Раздел 1. Графическая ссылка</a></h3>
-<p>Миниатюра шириной 90 пикселей открывает изображение 600 × 400 пикселей в новой вкладке.</p>
-<p><a href="assets/images/web-lab-large.svg" target="_blank"><img src="assets/images/web-lab-large.svg" width="90" alt="Миниатюра большого изображения"></a></p>
-<p>На изображении показаны редактор HTML-кода и окно браузера.</p>
-<p align="right"><a href="#top" target="_self">К началу страницы</a></p>
-
-<h3><a id="section2">Раздел 2. Таблица</a></h3>
-
-<table align="center" cellspacing="5" cellpadding="10" border="1" width="700" background="assets/images/table-pattern.svg">
-  <tr>
-    <td colspan="3" bgcolor="Aqua" background="assets/images/table-pattern.svg" height="50">
-      Основы веб-технологий
-    </td>
-    <td rowspan="5" align="center">
-      <a href="index.html" target="_self"><img src="assets/images/web-lab-large.svg" width="200" alt="Редактор кода и браузер — перейти на главную страницу"></a>
-      <p>Редактор кода и браузер</p>
-    </td>
-  </tr>
-  <tr>
-    <th>Технология</th>
-    <th background="assets/images/table-pattern.svg">Назначение</th>
-    <th>Раздел сайта</th>
-  </tr>
-  <tr>
-    <td>HTML</td>
-    <td>Структура страницы: заголовки, ссылки, списки, таблицы и формы.</td>
-    <td><a href="html-basics.html">HTML и закладки</a></td>
-  </tr>
-  <tr>
-    <td>CSS</td>
-    <td background="assets/images/table-pattern.svg">Оформление и расположение элементов, в том числе текста поверх шаблона паспорта.</td>
-    <td><a href="css-basics.html">CSS</a></td>
-  </tr>
-  <tr>
-    <td>JavaScript</td>
-    <td>Обработка нажатий, изменение текста в DOM и решение алгоритмических задач.</td>
-    <td><a href="javascript-basics.html">JavaScript</a><br><a href="task-1006.html">Задача № 1006</a></td>
-  </tr>
+<h3 id="section1">Раздел 1. Фотография матча</h3>
+<p>На изображении показаны хоккеисты во время матча зимних Олимпийских игр 1980 года в Лейк-Плэсиде. Видны вбрасывание, расстановка полевых игроков и вратарь около ворот.</p>
+<p>Нажмите на миниатюру: в новой вкладке откроется фотография размером 600 × 400 пикселей.</p>
+<p><a href="assets/images/hockey-match-600x400.jpg" target="_blank"><img src="assets/images/hockey-match-600x400.jpg" width="90" height="60" alt="Миниатюра фотографии хоккейного матча"></a></p>
+<p>Автор: Dr. John Kelley, NOAA. Фотография находится в общественном достоянии. <a href="https://commons.wikimedia.org/wiki/File:Ice_Hockey_Match,_Lake_Placid_1980.jpg" target="_blank">Источник фотографии</a>.</p>
+<p>Вбрасывание — хороший момент для наблюдения за командой. Два соперника борются за шайбу, а остальные готовятся поддержать их. Игроки заранее выбирают положение, чтобы получить передачу или помешать атаке. Вратарь следит за возможным продолжением и не теряет из виду пространство перед воротами.</p>
+<p>На фотографии хорошо заметно, насколько важна вся площадка. Даже хоккеисты, которые не участвуют во вбрасывании непосредственно, влияют на следующий эпизод. От их готовности зависит, сможет ли команда сохранить владение и быстро перейти к броску. Поэтому во время просмотра интересно следить не только за шайбой, но и за движением партнёров.</p>
+<p>Исторический снимок позволяет сравнить внешний вид хоккея разных лет. Меняются экипировка и оформление арен, но зрителю по-прежнему важно понимать роли игроков и причины остановок. Эта страница объединяет фотографию с короткой памяткой: ниже можно перейти к подробному рассказу о правилах и командной игре.</p>
+<p align="right"><a href="#top">К началу страницы</a></p>
+<h3 id="section2">Раздел 2. Памятка болельщика</h3>
+<div class="table-scroll">
+<table align="center" cellspacing="5" cellpadding="10" border="1" width="900" background="assets/images/table-pattern.svg">
+<tr><th colspan="4">Хоккей с шайбой: на что смотреть во время матча</th></tr>
+<tr>
+<th>Эпизод</th><th>Что происходит</th><th>Где прочитать</th>
+<td rowspan="4" align="center" background="assets/images/table-pattern.svg">
+<a href="assets/images/hockey-match.jpg" target="_blank"><img src="assets/images/hockey-match-600x400.jpg" width="260" alt="Хоккейный матч в Лейк-Плэсиде, 1980 год"></a>
+<p>Олимпийский хоккей, 1980 год.<br>Нажмите на фото, чтобы открыть оригинал.</p>
+</td></tr>
+<tr><td>Вбрасывание</td><td>Судья вводит шайбу в игру, а команды борются за владение и готовят продолжение.</td><td><a href="css-basics.html#section1">Как устроен матч</a></td></tr>
+<tr><td>Атака</td><td>Игроки открываются под передачи, продвигают шайбу к воротам и выбирают момент для броска.</td><td><a href="html-basics.html#section1">О хоккее</a></td></tr>
+<tr><td>Оборона</td><td>Защитники перекрывают направления передач, страхуют партнёров и помогают вратарю.</td><td><a href="javascript-basics.html#section1">Игровые позиции</a></td></tr>
 </table>
-
-<p align="right"><a href="#top" target="_self">К началу страницы</a></p>
-
+</div>
+<p>Таблица помогает выбрать, за каким эпизодом следить внимательнее. Вбрасывание показывает подготовку к началу действия, атака — движение шайбы и партнёров, оборона — согласованность и страховку. Ссылки ведут к соответствующим разделам сайта.</p>
+<p>Перед матчем можно выбрать один элемент и понаблюдать за ним несколько смен подряд. Например, посмотреть, как защитники начинают выход из своей зоны или как крайний нападающий открывается у борта. Такой подход делает просмотр понятнее и помогает замечать действия, которые не попадают в короткие обзоры.</p>
+<p align="right"><a href="#top">К началу страницы</a></p>
+</main>
 </body>
 </html>

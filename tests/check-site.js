@@ -22,7 +22,7 @@ for (const file of htmlFiles) {
   }
 
   assert.match(html, /id="site-nav"/, `${file}: отсутствует общая навигация`);
-  assert.match(html, /текущая/i, `${file}: не обозначена текущая страница`);
+  assert.match(html, /aria-current="page"/, `${file}: не обозначена текущая страница`);
   assert.match(html, /href="index\.html" target="_self"/, `${file}: нет перехода на начальную страницу`);
   assert.match(html, /href="html-basics\.html#section1" target="_self"/, `${file}: нет ссылки на закладку другой страницы`);
   assert.match(html, /href="https?:\/\/[^\"]+" target="_blank"/, `${file}: нет внешней ссылки в новом окне`);
@@ -59,13 +59,12 @@ const gallery = fs.readFileSync(path.join(root, "gallery.html"), "utf8");
 assert.match(gallery, /<table[^>]+background=/i, "gallery.html: нет фонового изображения таблицы");
 assert.match(gallery, /<td[^>]+background=/i, "gallery.html: нет фонового изображения ячейки");
 assert.match(gallery, /width="90"/, "gallery.html: нет миниатюры до 100 пикселей");
-assert.match(gallery, /href="assets\/images\/web-lab-large\.svg" target="_blank"/, "gallery.html: большое изображение не открывается в новой вкладке");
+assert.match(gallery, /href="assets\/images\/hockey-match-600x400\.jpg" target="_blank"/, "gallery.html: большое изображение не открывается в новой вкладке");
 assert.match(gallery, /На изображении показаны/, "gallery.html: нет пояснения к изображению");
 assert.match(gallery, /<td[\s\S]*<img /i, "gallery.html: нет изображения в ячейке");
 assert.match(gallery, /<table[\s\S]*<a /i, "gallery.html: нет гиперссылки в таблице");
 
-const largeImage = fs.readFileSync(path.join(root, "assets", "images", "web-lab-large.svg"), "utf8");
-assert.match(largeImage, /width="600" height="400"/, "Большое изображение должно иметь размер 600 x 400");
+assert.ok(fs.existsSync(path.join(root, "assets", "images", "hockey-match-600x400.jpg")), "Нет локальной версии фотографии 600 x 400");
 
 for (const file of ["passport-dom.html", "passport-change.html"]) {
   const html = fs.readFileSync(path.join(root, file), "utf8");

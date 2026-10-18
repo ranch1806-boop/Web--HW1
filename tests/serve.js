@@ -9,7 +9,9 @@ const contentTypes = {
   ".css": "text/css; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
   ".svg": "image/svg+xml",
-  ".png": "image/png"
+  ".png": "image/png",
+  ".jpg": "image/jpeg",
+  ".gif": "image/gif"
 };
 
 http.createServer((request, response) => {
