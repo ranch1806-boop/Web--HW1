@@ -61,7 +61,7 @@ function send() {
   if (checked) {
     document.getElementById("UserEnter").submit();
   } else {
-    alert("Сначала выполните расчет.");
+    document.getElementById("result").value = "Сначала выполните расчет.";
   }
 }
 

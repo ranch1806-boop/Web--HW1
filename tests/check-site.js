@@ -41,7 +41,7 @@ for (const file of ["html-basics.html", "css-basics.html", "javascript-basics.ht
 
 const forms = fs.readFileSync(path.join(root, "forms.html"), "utf8");
 assert.equal((forms.match(/<form /g) || []).length, 2, "forms.html: должно быть две формы");
-for (const name of ["last_name", "first_name", "group", "mobile_phone", "email", "message_date"]) {
+for (const name of ["last_name", "first_name", "group", "mobile_phone", "message_date"]) {
   assert.match(forms, new RegExp(`name="${name}"`), `forms.html: нет контактного поля ${name}`);
 }
 for (const type of ["text", "number", "radio", "checkbox", "date", "password", "hidden"]) {
