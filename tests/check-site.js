@@ -24,14 +24,14 @@ for (const file of htmlFiles) {
   assert.match(html, /id="site-nav"/, `${file}: отсутствует общая навигация`);
   assert.match(html, /aria-current="page"/, `${file}: не обозначена текущая страница`);
   assert.match(html, /href="index\.html" target="_self"/, `${file}: нет перехода на начальную страницу`);
-  assert.match(html, /href="html-basics\.html#section1" target="_self"/, `${file}: нет ссылки на закладку другой страницы`);
+  assert.match(html, /href="hockey\.html#section1" target="_self"/, `${file}: нет ссылки на закладку другой страницы`);
   assert.match(html, /href="https?:\/\/[^\"]+" target="_blank"/, `${file}: нет внешней ссылки в новом окне`);
 }
 
 assert.deepEqual(missing, [], "Найдены ссылки на отсутствующие локальные файлы");
 assert.equal(htmlFiles.length, 9, "Ожидалось 9 HTML-файлов");
 
-for (const file of ["html-basics.html", "css-basics.html", "javascript-basics.html", "gallery.html"]) {
+for (const file of ["hockey.html", "hockey-rules.html", "hockey-team.html", "hockey-matches.html"]) {
   const html = fs.readFileSync(path.join(root, file), "utf8");
   assert.match(html, /id="top"/, `${file}: нет закладки top`);
   assert.match(html, /href="#section1"/, `${file}: нет ссылки на раздел 1`);
@@ -51,18 +51,18 @@ for (const type of ["text", "number", "radio", "checkbox", "date", "password", "
   assert.match(forms, new RegExp(`type="${type}"[^>]+(?:value=|checked)`, "i"), `forms.html: нет значения по умолчанию для type=${type}`);
 }
 
-const lists = fs.readFileSync(path.join(root, "html-basics.html"), "utf8");
-assert.match(lists, /<ol>[\s\S]*<\/ol>/, "html-basics.html: нет нумерованного списка");
-assert.match(lists, /<ul>[\s\S]*<ul>[\s\S]*<\/ul>[\s\S]*<\/ul>/, "html-basics.html: нет вложенного списка");
+const lists = fs.readFileSync(path.join(root, "hockey.html"), "utf8");
+assert.match(lists, /<ol>[\s\S]*<\/ol>/, "hockey.html: нет нумерованного списка");
+assert.match(lists, /<ul>[\s\S]*<ul>[\s\S]*<\/ul>[\s\S]*<\/ul>/, "hockey.html: нет вложенного списка");
 
-const gallery = fs.readFileSync(path.join(root, "gallery.html"), "utf8");
-assert.match(gallery, /<table[^>]+background=/i, "gallery.html: нет фонового изображения таблицы");
-assert.match(gallery, /<td[^>]+background=/i, "gallery.html: нет фонового изображения ячейки");
-assert.match(gallery, /width="90"/, "gallery.html: нет миниатюры до 100 пикселей");
-assert.match(gallery, /href="assets\/images\/hockey-match-600x400\.jpg" target="_blank"/, "gallery.html: большое изображение не открывается в новой вкладке");
-assert.match(gallery, /На изображении показаны/, "gallery.html: нет пояснения к изображению");
-assert.match(gallery, /<td[\s\S]*<img /i, "gallery.html: нет изображения в ячейке");
-assert.match(gallery, /<table[\s\S]*<a /i, "gallery.html: нет гиперссылки в таблице");
+const matchesPage = fs.readFileSync(path.join(root, "hockey-matches.html"), "utf8");
+assert.match(matchesPage, /<table[^>]+background=/i, "hockey-matches.html: нет фонового изображения таблицы");
+assert.match(matchesPage, /<td[^>]+background=/i, "hockey-matches.html: нет фонового изображения ячейки");
+assert.match(matchesPage, /width="90"/, "hockey-matches.html: нет миниатюры до 100 пикселей");
+assert.match(matchesPage, /href="assets\/images\/hockey-match-600x400\.jpg" target="_blank"/, "hockey-matches.html: большое изображение не открывается в новой вкладке");
+assert.match(matchesPage, /На изображении показаны/, "hockey-matches.html: нет пояснения к изображению");
+assert.match(matchesPage, /<td[\s\S]*<img /i, "hockey-matches.html: нет изображения в ячейке");
+assert.match(matchesPage, /<table[\s\S]*<a /i, "hockey-matches.html: нет гиперссылки в таблице");
 
 assert.ok(fs.existsSync(path.join(root, "assets", "images", "hockey-match-600x400.jpg")), "Нет локальной версии фотографии 600 x 400");
 
